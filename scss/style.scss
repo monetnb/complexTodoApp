@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  @extend %flex;
+}
+aside {
+  background-color: rgb(140, 140, 231);
+  width: 15%;
+  height: 100vh;
+}
+main {
+  width: 85%;
+  height: 100vh;
+  header {
+    background-color: rgb(236, 240, 221);
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@import 'utils';
+@import 'todo';

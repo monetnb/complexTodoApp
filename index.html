@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This todo application will all you to add todo's to help you manage and track your daily,weekly, or monthly tasks"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Modern</title>
+  </head>
+  <body>
+    <div class="app">
+      <aside>
+        <header class="header">
+          <h1 class="header-title">My Categories</h1>
+          <form>
+            <input
+              type="text"
+              name="catInput"
+              id="category-input"
+              placeholder="Enter Category"
+            />
+            <button type="submit" id="addCategoryBtn">Add Category</button>
+          </form>
+
+          <br />
+          <hr />
+        </header>
+        <div class="catContainer">
+          <button class="btnOpt">View All</button>
+        </div>
+      </aside>
+
+      <main>
+        <header class="header">
+          <h1>Welcome to Modern Todo App</h1>
+
+          <div class="todo">
+            <select name="category" id="selectCategory">
+              <option value="">Select A Category</option>
+            </select>
+
+            <form>
+              <input
+                type="text"
+                name="input"
+                id="todo-input"
+                placeholder="Enter Todo"
+              />
+              <button type="submit" id="todo-submit">Add Todo</button>
+            </form>
+          </div>
+        </header>
+        <section id="main-todos">
+          <!-- <div class="todo-content"></div> -->
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
